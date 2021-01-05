@@ -1,0 +1,373 @@
+Devops:
+ definition
+ core fundamentals
+ benefits of devops
+ bensfits from business.
+ phases -
+
+	Design
+	Build
+	Operate
+	Feedback
+
+Today : Devops tools ;;
+
+SDLC
+-- Linux knowledge .. Imran  ( basic of linux )
+
+Phases:
+
+Plan ( Plan + Design) 
+-- Mgmt, architecture and Sr.
+-- planning tools 90% perfer to use own tools
+-- they will train the tools ..
+example:
+1. Azure devops
+2. Bitrix
+3. IBM CISRATS
+ etc..
+
+Code
+developers - Project - code 
+Manage this code and its versions --> software --> version control systems.
+
+example: 
+
+effectives and features
+
+1. git - devops  (/ leader )
+2. SVN - was leader ( Agile )
+3. Clearcase
+4. TFS -
+5. Mercurial
+6. Turtoise
+ etc....
+
+
+Build
+* this phases which is highly automation implementation in devops
+* build --> syntax check / compile ...
+
+	-- over the years the meaning of build has expanded ..
+
+	-- build ( compile + test + reports + documenation + release mgmt )
+
+build tools :
+
+selected based on language in project :
+
+Q. do you think in a project will u use one technology ?
+
+project ;; multiple  technologies ;; use
+
+build tools :
+types -1. specific 
+maven - java
+msbuild - .net
+ant
+
+SBT
+brocoli  
+2. multi
+gradle - java, python, c, html
+
+c --> using c complier
+java --> java based
+
+dev --> code -> local env --> ok --> push code into build systems --> verify ok or not..--> ok -- 
+
+u can identify the bugs/erros in early chain**
+
+Test
+Build tools maven _ test
+gradle - test
+sonarqueue
+selenium
+
+testing tools are integerated with devops tools
+
+Release
+tools - ansible, chef, puppet etc
+
+Deployment
+- application on servers
+- manage servers
+
+ansible -- application ;; 1200 - R1..
+chef - infrstrcture ( All in one) ;;10000
+puppet - infrasture ;;3000
+terraform - network
+saltstack - infrastrcuture
+openstack - cloud
+SCCM - infrastructure ;; 30,000
+
+intermediate - mpc/bipc/hec/mec/
+
+
+
+
+3000 - chef, SCCM
+Operate 
+communication tools : email, chat, ticketing tools, process; procuder
+
+knoweldge
+
+experience - fake ** - azure - work items assign  update
+minimum --> from real guy 2/3 hours - KT
+
+Azure - 
+bitrix
+Jira
+service now
+
+
+bitrix ;; free 
+
+
+
+Monitoring
+solarwinds -r2
+nagios - r1
+prothemus
+kafka - DB
+glowroot
+uproot
+
+
+Feedback.. ( new )
+
+Docker and kubernetes ??
+
+Earlier - application ---> 10 yrs --> application -- SOA -->
+
+application -- > service/depenceies
+
+containerization -   1000
+
+each - appl- 1000 - docker
+
+google - kubernetes con( orest. tools)
+
+each - application --> 1 client/user
+
+facebook - 
+
+90% containers - security; memory usage ;; effective
+
+webservers ;; VM issues--> containers
+
+high - application --> tools - c.o.t --> google ( kubernetes )
+internal tools...
+
+Jenkins ?? --> 
+
+build-test-release ;; 3 tools on 3 servers;;
+jenkins - build/test/release - 1 server
+Azure devops 
+
+jenkins release ( minimum ) -- ansible
+
+high 
+
+containers;; Docker; mesos, CRIO, ROcket
+
+kubernetes, docker swarm 
+
+
+git and github
+jenkins and maven
+ansible
+chef
+docker
+dkubernetes
+nagios
+vargant
+
+SHELL Scripting ***
+
+devops -- tools - use cases - tools - helpless -- scripting.. ( python/shell scripting)
+
+
+java
+vb
+
+** linux is required....
+
+profile ;;;
+
+devops
+common subjects -- linux, git/github, jenkins, docker
+
+developer - Common + * Docker
+
+testing -> common + build tools
+
+admin -> common + chef* + kubernetes + shell scripting
+
+fresher--??
+
+asif email id: ashishanand0516@gmail.com
+
+================== 31 DEC 2020 ==============
+summary:
+
+git installation - windows, linux
+create a git project
+configuration
+arch. of git - 3 layers system
+git init, git status, git add, git commit
+
+Q. How to commit multiple files ..
+
+	# git add file1 file2 file3 ...n
+
+	# git commit -m "comment" file1 file2 file3 ...n
+
+Q. how to commit multipe files if headcount is huge ?
+
+	# git add .
+
+	# git commit -m "comment" .
+
+Q. Understanding of "WD is clean" / WT is clean"
+
+	# git status
+
+		... WD is clean
+
+	under conditions are met:
+
+		1. content/files of WC= content/files of CA
+
+		2. stage , files = 0
+
+file 7 --> wc
+file 7 --> stage =1 --> 0
+commit --> CA , stage=0
+
+Q. how to check the files ??
+
+	WC --> ls -l
+	stage --> no command;; but message of git status can help u
+	ca --> git ls-files
+
+
+Q. How to check the last commit that is done in a repo ?
+
+linux text
+
+	# git show
+
+Q. How to check all the commits so far that are done in a repo ??
+
+	# git log --all
+
+	** it will show the data from 1st to recent(last)
+
+Q. how to check recent commits on a repo ?
+
+	# git log
+
+Q. How to check the commints in a easy format ?
+
+	# git log --oneline
+
+*	untrack -- only - vcs is not applied on that file.
+
+*  modified**
+
+Q. how to check the particular commit id in details ?
+
+	# git show <cid>
+
+Q. add - stage.. and I want to unstage..
+
+	code -- stage -- unstage -- add --> stage it
+
+
+I dev -- code --> local computer --ok --> git add --> stage -- jenkins -- build process - ok or not -- commit
+
+not ok -- unstage it -- error - fix it -- stage it -- commit
+
+upload to server -- wait PULL REQUEST - waits to verify -- obecjtive -- aprpove to to master/software
+
+====================  04 Jan 2021 ===========
+Q. How to configure email and name for a specific project  or local project?
+
+   # git config --local user.name <name>
+
+   # git config --local user.email <email id>
+
+
+Q. How to idenfity the project if it is configured with local ID?
+
+	# git config --list
+
+	global ID
+	...
+	...
+	Local ID
+
+Q. How to delete a file in a repo ?
+
+	# git rm <file_name>
+
+** if we delete a file from repo, the  deleted file is automatically staged..
+
+case 1 : if really delete then we have to commit it.
+
+	 wc - not there
+	 CA - not there
+	 stage - present here.
+
+	# git commit -m "deleteing the file" test123
+
+case 2 : abort/cancel the deletetion..
+
+	# git rm <file>
+
+	 wc - not there
+	 CA - not there
+	 stage - present here.
+
+        # git reset HEAD <file_name>
+
+
+	wc - not there
+	CA - its there
+	stage - not there.
+ 
+
+	to recall/copy of the file from CA to WC/WD
+	# git checkout -- filename 
+ 
+
+**Case 3 : I will delete the file, then commit it, then I want to revert the changes.
+
+	# git revert  ----> simply undo the commits
+
+	# git revert <CID>
+
+		real time ;; permissions
+
+Q. I will create a empty folder now, 
+
+	# git will not track any folder which is empty ***
+
+Q. How to set the color high lighting in Git ?
+
+# git config --global color.ui true
+
+# git config --global color.status auto
+
+# git config --global color.branch auto
+
+
+	untracked/modified ---> red
+
+	stage - green
+
+
+---------  05 JAN 2021 ======
+github
+
